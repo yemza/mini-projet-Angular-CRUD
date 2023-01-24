@@ -3,10 +3,12 @@ package com.miniprojetAngularCRUD.Services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.miniprojetAngularCRUD.Entities.Utilisateur;
 import com.miniprojetAngularCRUD.Respository.UtilisateurRespository;
 
+@Service
 public class UtilisateurServiceImpl implements UtilisateurService {
 	
 	@Autowired
