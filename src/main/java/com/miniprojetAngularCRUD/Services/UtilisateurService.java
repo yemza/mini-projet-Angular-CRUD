@@ -6,8 +6,7 @@ import com.miniprojetAngularCRUD.Entities.Utilisateur;
 
 public interface UtilisateurService {
 
-	Utilisateur addUser(Utilisateur utilisateur);
-	Utilisateur updateUser(Utilisateur utilisateur);
+	Utilisateur addUserOrUpdate(Utilisateur utilisateur);
 	void removeUser(Long idUtilisateur);
 	Utilisateur getUser(Long idUtilisateur);
 	List<Utilisateur> getUsers();
