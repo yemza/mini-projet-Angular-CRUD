@@ -26,13 +26,13 @@ public class Utilisateur {
 
 	private String userName;
 
-	private Date BirthDate;
+	private Date birthDate;
 
 	@OneToOne
 	@JoinColumn( name="id_city" )
 	private City city; 
 	
-	private String Country;
+	private String country;
 	
 public Utilisateur() {
 	// TODO Auto-generated constructor stub
@@ -46,9 +46,9 @@ public Utilisateur(Long id, String firstName, String lastName, String email, Str
 	this.lastName = lastName;
 	this.email = email;
 	this.userName = userName;
-	BirthDate = birthDate;
+	this.birthDate = birthDate;
 	this.city = city;
-	Country = country;
+	this.country = country;
 }
 
 public Long getId() {
@@ -92,11 +92,11 @@ public void setUserName(String userName) {
 }
 
 public Date getBirthDate() {
-	return BirthDate;
+	return birthDate;
 }
 
 public void setBirthDate(Date birthDate) {
-	BirthDate = birthDate;
+	birthDate = birthDate;
 }
 
 public City getCity() {
@@ -108,11 +108,11 @@ public void setCity(City city) {
 }
 
 public String getCountry() {
-	return Country;
+	return country;
 }
 
 public void setCountry(String country) {
-	Country = country;
+	country = country;
 }
 
 
