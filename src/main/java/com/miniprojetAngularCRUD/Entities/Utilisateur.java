@@ -96,7 +96,7 @@ public Date getBirthDate() {
 }
 
 public void setBirthDate(Date birthDate) {
-	birthDate = birthDate;
+	this.birthDate = birthDate;
 }
 
 public City getCity() {
@@ -112,7 +112,7 @@ public String getCountry() {
 }
 
 public void setCountry(String country) {
-	country = country;
+	this.country = country;
 }
 
 
